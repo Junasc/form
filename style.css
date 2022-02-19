@@ -4,9 +4,9 @@
     margin: 0;
 }
 :root {
-    --titulo: #3a3da3;
+    --titulo: #292d8a;
     --corfundo:#fac80077; 
-    --corbuttom: #63FAE7;
+    --corbuttom: #8cecec;
 }
 #titulo{
     font: normal bolder 4em 'work sans';
@@ -62,7 +62,7 @@ fieldset.grupo .divcampo {
     display: block;
 }
 .divcampo input:focus , .campo select:focus, .campo textarea:focus {
-    background-color: rgb(223, 248, 212);
+    background-color: rgb(255, 255, 255);
 }
 #check {
     display:inline;
@@ -72,13 +72,20 @@ textarea{
 }
 .botao {
     background-color: var(--corbuttom);
-    border: 0;
+    border:0;
+    border-radius: 3px;
     margin-bottom: 1em;
     font-size: 1.2em;
     top: 90%;
     left: 50%;
     margin-right: -50%;
     padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.376);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.431);
     position: relative;
+    transition: 0.1s;
+}
+:active .botao {
+    top: 3px;
+    background-color:var(--corbuttom);
+    box-shadow: 3px 3px 2px var(--corbuttom);
 }
