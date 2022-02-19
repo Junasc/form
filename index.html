@@ -13,6 +13,7 @@
         <h1 id="titulo">Cadastro de Pet</h1>
         <p id="subtitulo">Complete suas informações</p> 
     </div>
+    <hr>
 
     <form>
         <fieldset class="grupo">
@@ -24,12 +25,16 @@
                 <label for="sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
+            
+            <div class="divcampo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="divcampo">
+                <label for="telefone"><strong>Telefone:</strong></label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
         </fieldset>
-
-        <div class="divcampo">
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" name="email" id="email">
-        </div>
 
         <div class="divcampo">
             <h2>Agora Sobre o seu pet:</h2>
@@ -41,22 +46,22 @@
 
             <label>
                 <label><strong>Espécie: </strong></label>
-                <input type="radio" name="especie" value="gato"> Gato
-                <input type="radio" name="especie" value="cachorro"> Cachorro
+                <input type="radio" name="especie" value=" gato"> Gato
+                <input type="radio" name="especie" value=" cachorro"> Cachorro
             </label>
 
             <label><strong>Sexo: </strong></label>
             <label>
-                <input type="radio" name="sexo" value="femea" >Fêmea
-                <input type="radio" name="sexo" value="macho">Macho
+                <input type="radio" name="sexo" value="femea"> Fêmea
+                <input type="radio" name="sexo" value="macho"> Macho
             </label>
         </div>
 
         <div class="divcampo">
             <label><strong>Castrado?</strong> </label>
             <label>
-                <input type="radio" name="castrado" value="sim">Sim
-                <input type="radio" name="castrado" value="nao">Não
+                <input type="radio" name="castrado" value="sim"> Sim
+                <input type="radio" name="castrado" value="nao"> Não
             </label>
         </div>
 
@@ -87,7 +92,7 @@
             <fieldset class="grupo">
 
                 <div id="check">
-                   <label><strong>Selecione as cores do seu pet: </strong></label>
+                   <label><strong>Selecione as cores do seu pet: </strong></label><br>
                    <input type="checkbox" id="cor" name="cor1" value="branco"><label> Branco</label>
                    <input type="checkbox" id="cor" name="cor2" value="preto"><label> Preto</label>
                    <input type="checkbox" id="cor" name="cor3" value="cinza"><label> Cinza</label>

@@ -3,28 +3,43 @@
     padding:0;
     margin: 0;
 }
+:root {
+    --titulo: #3a3da3;
+    --corfundo:#fac80077; 
+    --corbuttom: #63FAE7;
+}
 #titulo{
     font: normal bolder 4em 'work sans';
+    text-align: center;
+    padding-bottom: 20px;
+    padding: 25px;
 }
 #subtitulo{
     font: normal bolder 25px 'work sans';
-    padding-bottom: 2em;
-    text-align: justify;
+    padding-bottom: 1em;
+    text-align: center;
 }
 body{
-    background-color: rgb(79, 167, 79);
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 6px black;
-    margin-top: 2%;
-    margin-left: 36%;
+    background-color:var(--corfundo);
+    color: var(--titulo);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.226);
     font: normal lighter 1.2em 'work sans';
     justify-content: center;
+}
+h2 {
+    padding-bottom: 20px;
+}
+form {
+    margin-top: 2%;
+    margin-left: 36%;
 }
 input, select, textarea, button{
     border-radius: 3px;
 }
 fieldset{
     border: 0;
+    columns: auto;
+    max-width: 400px;
 }
 fieldset.grupo .divcampo {
     float: left;
@@ -40,21 +55,23 @@ fieldset.grupo .divcampo {
 .divcampo select option{
     padding-right: 1em;
 }
-.divcampo input[type="text"], .divcampo input[type="email"], .divcampo select, .divcampo textarea{
+.divcampo input[type="text"], .divcampo input[type="email"], .divcampo input[type="tel"] , .divcampo select, .divcampo textarea{
     padding: 0.2em;
-    border: 1px solid rgb(4, 85, 4);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+    border: 1px solid var(--titulo);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.192);
     display: block;
 }
 .divcampo input:focus , .campo select:focus, .campo textarea:focus {
     background-color: rgb(223, 248, 212);
 }
 #check {
-    display: inline-block;
-    
+    display:inline;
+}
+textarea{
+    max-width: 80%
 }
 .botao {
-    background-color: rgb(102, 223, 102);
+    background-color: var(--corbuttom);
     border: 0;
     margin-bottom: 1em;
     font-size: 1.2em;
