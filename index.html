@@ -4,59 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon paw.ico" type="image/x-icon">
     <title>Formulário</title>
 </head>
 <body>
-    <div>
+    <class="divcampo">
         <h1 id="titulo">Cadastro de Pet</h1>
         <p id="subtitulo">Complete suas informações</p> 
     </div>
 
     <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+        <fieldset class="grupo">
+            <div class="divcampo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="divcampo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
-        <div>
-            <label>Email</label>
+        <div class="divcampo">
+            <label for="email"><strong>Email</strong></label>
             <input type="email" name="email" id="email">
         </div>
 
-        <div>
+        <div class="divcampo">
             <h2>Agora Sobre o seu pet:</h2>
-            <div>
-                <label>Nome do pet</label>
-                <input type="text" name="nomepet" id="nomepet">
+            <div class="divcampo">
+                <label><strong>Nome do pet</strong></label>
+                <input type="text" name="nomepet" id="nomepet" required>
             </div>
 
-            <label>Sexo: </label>
+
             <label>
-                <input type="radio" name="sexo" value="femea" checked>Fêmea
+                <label><strong>Espécie: </strong></label>
+                <input type="radio" name="especie" value="gato"> Gato
+                <input type="radio" name="especie" value="cachorro"> Cachorro
             </label>
+
+            <label><strong>Sexo: </strong></label>
             <label>
+                <input type="radio" name="sexo" value="femea" >Fêmea
                 <input type="radio" name="sexo" value="macho">Macho
             </label>
         </div>
 
-        <div>
-            <label>Castrado? </label>
+        <div class="divcampo">
+            <label><strong>Castrado?</strong> </label>
             <label>
                 <input type="radio" name="castrado" value="sim">Sim
-            </label>
-            <label>
                 <input type="radio" name="castrado" value="nao">Não
             </label>
         </div>
 
-            <div>
-                <label">Peso: </label>
+            <div class="divcampo">
+                <label for="peso"><strong>Peso:</strong></label>
                 <select id="peso">
                     <option value="" selected disabled>Selecione</option>
                     <option>0 - 1kg</option>
@@ -66,29 +71,39 @@
                     <option>8kg - 10kg</option>
                     <option>Mais de 10kg</option>
                 </select>
+
+                <label><strong>Idade: </strong></label>
+                <select id="peso">
+                    <option value="" selected disabled>Selecione</option>
+                    <option>0 - 1 ano</option>
+                    <option>1 - 3 anos</option>
+                    <option>3 - 5 anos </option>
+                    <option>5 - 10 anos</option>
+                    <option>mais de 10 anos</option>
+                    
+                </select>
             </div>
 
-            <fieldset>
+            <fieldset class="grupo">
 
-                <div>
-                   <label>Selecione as cores do seu pet: </label><br><br>
-                   <input type="checkbox" id="cor" name="cor1" value="branco"><label>Branco</label>
-                   <input type="checkbox" id="cor" name="cor2" value="preto"><label>Preto</label>
-                   <input type="checkbox" id="cor" name="cor3" value="cinza"><label>Cinza</label><br>
-                   <input type="checkbox" id="cor" name="cor4" value="bege"><label>Bege</label>
-                   <input type="checkbox" id="cor" name="cor5" value="amarelo"><label>Amarelo</label>
-                   <input type="checkbox" id="cor" name="cor6" value="tigrado"><label>Tigrado</label>
-                   <input type="checkbox" id="cor" name="cor7" value="dourado"><label>Dourado</label>
+                <div id="check">
+                   <label><strong>Selecione as cores do seu pet: </strong></label>
+                   <input type="checkbox" id="cor" name="cor1" value="branco"><label> Branco</label>
+                   <input type="checkbox" id="cor" name="cor2" value="preto"><label> Preto</label>
+                   <input type="checkbox" id="cor" name="cor3" value="cinza"><label> Cinza</label>
+                   <input type="checkbox" id="cor" name="cor4" value="bege"><label> Bege</label>
+                   <input type="checkbox" id="cor" name="cor5" value="amarelo"><label> Amarelo</label>
+        
                 </div>
             </fieldset>
             
-        <div>
+        <div class="divcampo">
             <br>
-            <label>Conte um Pouco sobre o seu pet:</label>
+            <label><strong>Conte um Pouco sobre o seu pet:</strong></label>
             <textarea rows="6" style="width: 26em" id="experiencia"></textarea>
         </div>
 
-        <button type="submit">Concluído</button>
+        <button class="botao" type="submit">Concluído</button>
 
     </form>
 
