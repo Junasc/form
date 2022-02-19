@@ -28,11 +28,11 @@
             
             <div class="divcampo">
                 <label for="email"><strong>Email</strong></label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </div>
             <div class="divcampo">
                 <label for="telefone"><strong>Telefone:</strong></label>
-                <input type="tel" name="telefone" id="telefone">
+                <input type="tel" name="telefone" id="telefone" required>
             </div>
         </fieldset>
 
@@ -46,13 +46,13 @@
 
             <label>
                 <label><strong>Espécie: </strong></label>
-                <input type="radio" name="especie" value=" gato"> Gato
+                <input type="radio" name="especie" value=" gato" required> Gato
                 <input type="radio" name="especie" value=" cachorro"> Cachorro
             </label>
 
             <label><strong>Sexo: </strong></label>
             <label>
-                <input type="radio" name="sexo" value="femea"> Fêmea
+                <input type="radio" name="sexo" value="femea" required> Fêmea
                 <input type="radio" name="sexo" value="macho"> Macho
             </label>
         </div>
@@ -60,7 +60,7 @@
         <div class="divcampo">
             <label><strong>Castrado?</strong> </label>
             <label>
-                <input type="radio" name="castrado" value="sim"> Sim
+                <input type="radio" name="castrado" value="sim" required> Sim
                 <input type="radio" name="castrado" value="nao"> Não
             </label>
         </div>
