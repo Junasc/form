@@ -10,7 +10,7 @@ Colocar em prática conhecimentos em HTML e CSS.
 
 ## 👨‍🏫 Exemplo de uso
 
-Confira: https://junasc.github.io/form/
+Confira:  https://junasc.github.io/form-pet/
 
 <p align="center" style="width: 400px">
   <img src="assets\foto1.JPG">
